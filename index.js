@@ -50,6 +50,11 @@ function methodGeolocation (params, callback) {
       error.error = err;
     }
 
+    if (data && data.error) {
+      error = new Error ('api error');
+      error.error = data.error.errors;
+    }
+
     if (error) {
       error.statusCode = res && res.statusCode;
       callback (error);
