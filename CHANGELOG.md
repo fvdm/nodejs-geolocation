@@ -1,3 +1,9 @@
+#### 1.0.1 (2016-9-30)
+
+##### Documentation Changes
+
+* **readme:** Fixed missing table column ([21e2c023](https://github.com/fvdm/nodejs-geolocation/commit/21e2c0239183554468208655adeedff2a87023ff))
+
 ## 1.0.0 (2016-9-30)
 
 ##### Documentation Changes
