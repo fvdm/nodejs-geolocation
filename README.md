@@ -55,7 +55,7 @@ Installation
 Configuration
 -------------
 
-param   | type   | required | default | 
+param   | type   | required | default | description
 :-------|:-------|:---------|:--------|:---------------------
 key     | string | yes      |         | Google API key
 timeout | number | no       | 5000    | Request timeout in ms
