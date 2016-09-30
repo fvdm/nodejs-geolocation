@@ -71,6 +71,16 @@ const geolocation = require ('google-geolocation') ({
 ```
 
 
+Errors
+------
+
+message          | description              | props
+:----------------|:-------------------------|:--------------------------------
+api error        | API returned an error    | `.error` (array), `.statusCode`
+invalid response | API returns invalid data | `.error` (string), `.statusCode`
+request failed   | Request failed           | `.error`
+
+
 Unlicense
 ---------
 
