@@ -69,7 +69,7 @@ function methodGeolocation (params, callback) {
  * @return geolocation {function}
  */
 
-module.exports = (set) {
+module.exports = (set) => {
   config.key = set && set.key || null;
   config.timeout = set && set.timeout || config.timeout;
 }
