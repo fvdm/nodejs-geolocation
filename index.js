@@ -7,6 +7,8 @@ Source & docs:    https://github.com/fvdm/nodejs-geolocation
 Feedback & bugs:  https://github.com/fvdm/nodejs-geolocation/issues
 */
 
+'use strict';
+
 const httpreq = require ('httpreq');
 
 let config = {
