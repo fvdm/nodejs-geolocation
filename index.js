@@ -24,7 +24,7 @@ let config = {
  * @return {void}
  */
 
-function geolocation (params, callback) {
+function methodGeolocation (params, callback) {
   const options = {
     method: 'POST',
     url: 'https://www.googleapis.com/geolocation/v1/geolocate?key=' + config.key,
@@ -70,5 +70,5 @@ function geolocation (params, callback) {
 module.exports = (set) {
   config.key = set && set.key || null;
   config.timeout = set && set.timeout || config.timeout;
-  return geolocation;
 }
+  return methodGeolocation;
