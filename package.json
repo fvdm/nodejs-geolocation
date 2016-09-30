@@ -4,7 +4,7 @@
     "email": "fr@nkl.in",
     "url": "https://frankl.in"
   },
-  "name": "skyhook-api",
+  "name": "google-geolocation",
   "description": "Google Maps Geolocation API for Node.js (unofficial)",
   "version": "0.1.0",
   "repository": {
