@@ -72,5 +72,5 @@ function methodGeolocation (params, callback) {
 module.exports = (set) => {
   config.key = set && set.key || null;
   config.timeout = set && set.timeout || config.timeout;
-}
   return methodGeolocation;
+};
