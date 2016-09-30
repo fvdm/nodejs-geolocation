@@ -1,0 +1,49 @@
+{
+  "author": {
+    "name": "Franklin van de Meent",
+    "email": "fr@nkl.in",
+    "url": "https://frankl.in"
+  },
+  "name": "skyhook-api",
+  "description": "Google Maps Geolocation API for Node.js (unofficial)",
+  "version": "1.2.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fvdm/nodejs-geolocation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fvdm/nodejs-geolocation/issues"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "httpreq": "^0.4.22"
+  },
+  "devDependencies": {
+    "dotest": "^1.13.5"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "keywords": [
+    "accesspoints",
+    "api",
+    "bssid",
+    "carrier",
+    "cellular",
+    "geolocation",
+    "google",
+    "location",
+    "lookup",
+    "mcc",
+    "mnc",
+    "mobile",
+    "network",
+    "unlicense",
+    "wifi",
+    "wlan"
+  ],
+  "license": "Unlicense",
+  "scripts": {
+    "test": "dotest"
+  }
+}
