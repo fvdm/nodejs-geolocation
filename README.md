@@ -10,6 +10,7 @@ You need a Google API key with access to the Google Maps Geolocation API.
 [![Coverage Status](https://coveralls.io/repos/github/fvdm/nodejs-geolocation/badge.svg?branch=master)](https://coveralls.io/github/fvdm/nodejs-geolocation?branch=master)
 [![bitHound Dependencies](https://www.bithound.io/github/fvdm/nodejs-geolocation/badges/dependencies.svg)](https://www.bithound.io/github/fvdm/nodejs-geolocation/master/dependencies/npm)
 [![bitHound Code](https://www.bithound.io/github/fvdm/nodejs-geolocation/badges/code.svg)](https://www.bithound.io/github/fvdm/nodejs-geolocation)
+[![Greenkeeper badge](https://badges.greenkeeper.io/fvdm/nodejs-geolocation.svg)](https://greenkeeper.io/)
 
 * [Node.js](https://nodejs.org)
 * [API documentation](https://developers.google.com/maps/documentation/geolocation/intro)
