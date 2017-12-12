@@ -20,10 +20,11 @@ let config = {
 /**
  * Perform geolocation request
  *
- * @callback callback
- * @param param {object} - Request body parameters
- * @param callback {function} - `function (err, data) {}`
- * @return {void}
+ * @callback  callback
+ * @param     {object}    param    Request body parameters
+ * @param     {function}  callback `(err, data)`
+ *
+ * @return    {void}
  */
 
 function methodGeolocation (params, callback) {
@@ -68,10 +69,11 @@ function methodGeolocation (params, callback) {
 /**
  * Module setup
  *
- * @param set {object} - Configuration settings
- * @param set.key {string} - Google API key
- * @param [set.timeout=5000] {number} - Request timeout in ms
- * @return geolocation {function}
+ * @param   {object}    set                 Configuration settings
+ * @param   {string}    set.key             Google API key
+ * @param   {int}       [set.timeout=5000]  Request timeout in ms
+ *
+ * @return  {function}
  */
 
 module.exports = (set) => {
