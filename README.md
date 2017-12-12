@@ -50,7 +50,7 @@ geolocation (params, (err, data) => {
 Installation
 ------------
 
-`npm install google-geolocation --save`
+`npm i google-geolocation --save`
 
 
 Configuration
