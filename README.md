@@ -6,7 +6,7 @@ Google Maps Geolocation API for Node.js (unofficial)
 You need a Google API key with access to the Google Maps Geolocation API.
 
 [![npm](https://img.shields.io/npm/v/google-geolocation.svg?maxAge=3600)](https://github.com/fvdm/nodejs-geolocation/blob/master/CHANGELOG.md)
-[![Build Status](https://travis-ci.org/fvdm/nodejs-geolocation.svg?branch=master)](https://travis-ci.org/fvdm/nodejs-geolocation)
+[![Build Status](https://github.com/fvdm/nodejs-geolocation/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/fvdm/nodejs-geolocation/actions/workflows/node.js.yml)
 [![Coverage Status](https://coveralls.io/repos/github/fvdm/nodejs-geolocation/badge.svg?branch=master)](https://coveralls.io/github/fvdm/nodejs-geolocation?branch=master)
 
 * [Node.js](https://nodejs.org)
