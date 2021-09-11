@@ -28,7 +28,7 @@ dotest.add ('Function', async test => {
   let data;
 
   try {
-    data = await geolocation ({
+    data = await app ({
       key: config.key,
       timeout: config.timeout,
       wifiAccessPoints: [
@@ -46,7 +46,7 @@ dotest.add ('Function', async test => {
 
   const location = data && data.location;
 
-  test (err)
+  test (error)
     .isObject ('fail', 'data', data)
     .isNotEmpty ('fail', 'data', data)
     .isObject ('fail', 'data.location', location)
@@ -63,7 +63,7 @@ dotest.add ('API error', async test => {
   let data;
 
   try {
-    data = await geolocation ({
+    data = await app ({
       key: config.key,
       considerIp: false,
       carrier: 0,
@@ -74,7 +74,7 @@ dotest.add ('API error', async test => {
   }
 
   test ()
-    .isError ('fail', 'error', err)
+    .isError ('fail', 'error', error)
     .isExactly ('fail', 'error.message', error && error.message, 'notFound')
     .isNumber ('fail', 'error.code', error && error.code)
     .isArray ('fail', 'error.errors', error && error.errors)
