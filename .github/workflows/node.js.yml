@@ -54,8 +54,8 @@ jobs:
     steps:
       - run: echo "Build was sucessfull"
 
-  finish:
-    name: "Finish"
+  coveralls:
+    name: "Upload coverage"
     needs: build
     if: always()
     runs-on: ubuntu-latest
