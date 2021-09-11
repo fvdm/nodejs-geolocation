@@ -9,6 +9,10 @@
     "es6": true
   },
 
+  "globals": {
+    "arguments": "writable"
+  },
+
   "rules": {
     "array-bracket-spacing": ["error", "never"],
     "brace-style": ["error", "stroustrup", {
