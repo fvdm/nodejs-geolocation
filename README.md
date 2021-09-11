@@ -1,5 +1,4 @@
-google-geolocation
-==================
+# google-geolocation
 
 Google Maps Geolocation API for Node.js (unofficial)
 
@@ -9,80 +8,66 @@ You need a Google API key with access to the Google Maps Geolocation API.
 [![Build Status](https://github.com/fvdm/nodejs-geolocation/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/fvdm/nodejs-geolocation/actions/workflows/node.js.yml)
 [![Coverage Status](https://coveralls.io/repos/github/fvdm/nodejs-geolocation/badge.svg?branch=master)](https://coveralls.io/github/fvdm/nodejs-geolocation?branch=master)
 
-* [Node.js](https://nodejs.org)
 * [API documentation](https://developers.google.com/maps/documentation/geolocation/intro)
 
 
-Example
--------
+## Example
 
 ```js
-const geolocation = require ('google-geolocation') ({
-  key: 'api key'
-});
+const geo = require ('google-geolocation');
 
-// Configure API parameters
-const params = {
-  wifiAccessPoints: [
-    {
-      macAddress: '01:23:45:67:89:AB',
-      signalStrength: -65,
-      signalToNoiseRatio: 40
-    }
-  ]
-};
+function out (obj) {
+  console.dir (obj, {
+    depth: null,
+    colors: true,
+  });
+}
 
 // Get data
-geolocation (params, (err, data) => {
-  if (err) {
-    console.log (err);
-    return;
-  }
-
-  console.log (data);
-});
+geo ({
+  key: 'abc123',
+  wifiAccessPoints: [{
+    macAddress: '01:23:45:67:89:AB',
+    signalStrength: -65,
+    signalToNoiseRatio: 40,
+  }],
+})
+  .then (out)
+  .catch (err => {
+    out (err);
+    process.exit (1);
+  })
+;
 ```
 
 
-Installation
-------------
+## Installation
 
-`npm i google-geolocation --save`
+`npm i google-geolocation`
 
 
-Configuration
--------------
+## Configuration
 
-param   | type   | required | default | description
-:-------|:-------|:---------|:--------|:---------------------
-key     | string | yes      |         | Google API key
-timeout | number | no       | 5000    | Request timeout in ms
+param     | type   | default | description
+:---------|:-------|:--------|:-----------
+key       | string |         | Google API key
+[timeout] | number | `5000`  | Request timeout in ms
 
 
 #### Example
 
 ```js
-const geolocation = require ('google-geolocation') ({
+const geo = require ('google-geolocation');
+
+geo ({
   key: 'abc123',
-  timeout: 2000
+  timeout: 2000,
 });
 ```
 
 
-Errors
-------
+## Unlicense
 
-message          | description              | props
-:----------------|:-------------------------|:--------------------------------
-api error        | API returned an error    | `.error` (array), `.statusCode`
-invalid response | API returns invalid data | `.error` (string), `.statusCode`
-request failed   | Request failed           | `.error`
-
-
-Unlicense
----------
-
-```
 This is free and unencumbered software released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or
@@ -105,14 +90,11 @@ IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
 OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
-```
 
-For more information, please refer to <http://unlicense.org>
+For more information, please refer to <https://unlicense.org>
 
 
-Author
-------
+## Author
 
-[Franklin van de Meent](https://frankl.in)
-
-[![Buy me a coffee](https://frankl.in/u/kofi/kofi-readme.png)](https://ko-fi.com/franklin)
+[Franklin](https://fvdm.com)
+| [Buy me a coffee](https://fvdm.com/donating)
