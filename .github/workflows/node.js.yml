@@ -36,7 +36,7 @@ jobs:
       - run: npm test
         env:
           KEY: ${{ secrets.KEY }}
-          TIMEOUT: ${{ secret.TIMEOUT }}
+          TIMEOUT: ${{ secrets.TIMEOUT }}
           DOTEST_NOCOV: ${{ secrets.DOTEST_NOCOV }}
           DOTEST_MINCOV: ${{ secrets.DOTEST_MINCOV }}
       - run: npm audit --production
