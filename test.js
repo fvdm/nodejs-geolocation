@@ -64,7 +64,7 @@ dotest.add ('API error', async test => {
 
   try {
     data = await app ({
-      key: config.key,
+      key: 'invalid',
       considerIp: false,
       carrier: 0,
     });
