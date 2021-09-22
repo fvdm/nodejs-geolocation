@@ -1,3 +1,36 @@
+## 2.0.0 (2021-09-22)
+
+##### Breaking Changes
+
+*  Interface changed ([38765dc7](https://github.com/fvdm/nodejs-geolocation/commit/38765dc7cee426b909baa7a3320e941e36b9cc44))
+
+##### Chores
+
+* **license:**  Update old url ([5e71f9c2](https://github.com/fvdm/nodejs-geolocation/commit/5e71f9c21c5253ea96f25c96ebfcf727e08a5c19))
+*  Removed bitHound ([f5d75a99](https://github.com/fvdm/nodejs-geolocation/commit/f5d75a99a22bfa6aba5d41159487551a127c3918))
+* **package:**  Update deps and meta ([942874a1](https://github.com/fvdm/nodejs-geolocation/commit/942874a14a6101bc227bbc10a5025ed14bbb5e3a))
+
+##### Bug Fixes
+
+*  upgrade httpreq from 0.4.24 to 0.5.1 ([#9](https://github.com/fvdm/nodejs-geolocation/pull/9)) ([4f2b943e](https://github.com/fvdm/nodejs-geolocation/commit/4f2b943eca732a6ee68f8f516bbc1203e699a1ff))
+
+##### Tests
+
+* **ci:**  Ignore Coveralls error ([c4496673](https://github.com/fvdm/nodejs-geolocation/commit/c4496673c592c33b447075006826bdd527d5cf34))
+* **CI:**
+  *  Clarify Coveralls job ([98b233a0](https://github.com/fvdm/nodejs-geolocation/commit/98b233a03beb94b03f979b186ee3424a0e191247))
+  *  Removed old `git fetch` line ([73bd00bd](https://github.com/fvdm/nodejs-geolocation/commit/73bd00bd3437c1193c70d1a39520ffa3e29d347e))
+  *  Fixed typo in env vars ([e9dc7e28](https://github.com/fvdm/nodejs-geolocation/commit/e9dc7e28aa621290960307c6b3e679f249730e1d))
+  *  Github deps and funding configs ([3bc0aaf0](https://github.com/fvdm/nodejs-geolocation/commit/3bc0aaf099177465ef03945ce476b19503033324))
+  *  Replaced Travis with Github action ([027f0583](https://github.com/fvdm/nodejs-geolocation/commit/027f05838516df0067bf2535c3c5ea396ec284f3))
+*  Fixed API error message check ([b7791263](https://github.com/fvdm/nodejs-geolocation/commit/b7791263f78ecb078c7d7ffc4949d683fe3ee1ef))
+*  Updated API error params ([fbf20eb1](https://github.com/fvdm/nodejs-geolocation/commit/fbf20eb1e1b3cb250e6d5d967ff2989223442ec4))
+*  Fixed bad refs ([529f26b9](https://github.com/fvdm/nodejs-geolocation/commit/529f26b93c22323f5dda3455e54f5b22899fe14b))
+* **config:**
+  *  Allow undefined `arguments` var ([32b9f38e](https://github.com/fvdm/nodejs-geolocation/commit/32b9f38e8afc28b6da746e881a494067eb578830))
+  *  Update ESLint and gitignore ([1ce0feb4](https://github.com/fvdm/nodejs-geolocation/commit/1ce0feb4b1d51afeca4123a1896408003f6b3040))
+  *  Update Travis node versions and env ([c8921089](https://github.com/fvdm/nodejs-geolocation/commit/c8921089f07b98630592ec5a830b3ad88b5c9669))
+
 #### 1.0.2 (2017-12-12)
 
 ##### Chores
