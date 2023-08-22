@@ -16,7 +16,7 @@
   },
   "main": "index.js",
   "dependencies": {
-    "httpreq": "^0.5.1"
+    "httpreq": "^1.1.0"
   },
   "devDependencies": {
     "dotest": "^2.9.0"
