@@ -17,7 +17,7 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "dotest": "^2.9.0"
+    "dotest": "^2"
   },
   "engines": {
     "node": ">=18"
