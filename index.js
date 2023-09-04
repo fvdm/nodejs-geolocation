@@ -6,8 +6,6 @@ License:          Unlicense (public domain, see LICENSE file)
 Source & docs:    https://github.com/fvdm/nodejs-geolocation
 */
 
-const { doRequest } = require ('httpreq');
-
 
 /**
  * Perform geolocation request
@@ -26,15 +24,16 @@ module.exports = async ({
   delete arguments[0].key;
   delete arguments[0].timeout;
 
+  const url = `https://www.googleapis.com/geolocation/v1/geolocate?key=${key}`;
+
   const options = {
     method: 'POST',
-    url: `https://www.googleapis.com/geolocation/v1/geolocate?key=${key}`,
-    json: arguments[0],
-    timeout,
+    body: JSON.stringify (arguments[0]),
+    signal: AbortSignal.timeout (timeout),
   };
 
-  const res = await doRequest (options);
-  const data = JSON.parse (res.body);
+  const res = await fetch (url, options);
+  const data = await res.json();
 
   if (data.error) {
     const error = new Error (data.error.message);

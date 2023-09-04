@@ -15,14 +15,12 @@
     "url": "https://github.com/fvdm/nodejs-geolocation/issues"
   },
   "main": "index.js",
-  "dependencies": {
-    "httpreq": "^0.5.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "dotest": "^2.9.0"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=18"
   },
   "keywords": [
     "accesspoints",
