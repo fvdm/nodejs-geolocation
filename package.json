@@ -22,6 +22,10 @@
   "engines": {
     "node": ">=18"
   },
+  "files": [
+    "example.js"
+  ],
+  "runkitExampleFilename": "example.js",  
   "keywords": [
     "accesspoints",
     "api",
