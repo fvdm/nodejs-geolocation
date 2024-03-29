@@ -39,6 +39,7 @@ module.exports = async ( {
     const error = new Error( data.error.message );
 
     error.code = data.error.code;
+    error.reason = error.code;
     error.errors = data.error.errors;
 
     throw error;
