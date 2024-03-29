@@ -17,10 +17,10 @@ Source & docs:    https://github.com/fvdm/nodejs-geolocation
  * @return {Promise<object>}
  */
 
-module.exports = async ({
+module.exports = async ( {
   key,
   timeout = 5000,
-}) => {
+} ) => {
   delete arguments[0].key;
   delete arguments[0].timeout;
 
@@ -28,15 +28,15 @@ module.exports = async ({
 
   const options = {
     method: 'POST',
-    body: JSON.stringify (arguments[0]),
-    signal: AbortSignal.timeout (timeout),
+    body: JSON.stringify( arguments[0] ),
+    signal: AbortSignal.timeout( timeout ),
   };
 
-  const res = await fetch (url, options);
+  const res = await fetch( url, options );
   const data = await res.json();
 
-  if (data.error) {
-    const error = new Error (data.error.message);
+  if ( data.error ) {
+    const error = new Error( data.error.message );
 
     error.code = data.error.code;
     error.errors = data.error.errors;
