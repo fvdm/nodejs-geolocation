@@ -2,7 +2,7 @@
 
 const geo = require( 'google-geolocation' );
 
-function out( obj ) {
+function out ( obj ) {
   console.dir( obj, {
     depth: null,
     colors: true,
@@ -17,7 +17,7 @@ geo( {
       macAddress: '01:23:45:67:89:AB',
       signalStrength: -65,
       signalToNoiseRatio: 40,
-    }
+    },
   ],
 } )
   .then( out )
