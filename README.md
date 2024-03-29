@@ -15,29 +15,26 @@ You need a Google API key with access to the Google Maps Geolocation API.
 ## Example
 
 ```js
-const geo = require ('google-geolocation');
+const geo = require( 'google-geolocation' );
 
-function out (obj) {
-  console.dir (obj, {
+function out( obj ) {
+  console.dir( obj, {
     depth: null,
     colors: true,
-  });
+  } );
 }
 
 // Get data
-geo ({
+geo( {
   key: 'abc123',
   wifiAccessPoints: [{
     macAddress: '01:23:45:67:89:AB',
     signalStrength: -65,
     signalToNoiseRatio: 40,
   }],
-})
-  .then (out)
-  .catch (err => {
-    out (err);
-    process.exit (1);
-  })
+} )
+  .then( out )
+  .catch( out )
 ;
 ```
 
@@ -53,17 +50,18 @@ param     | type   | default | description
 :---------|:-------|:--------|:-----------
 key       | string |         | Google API key
 [timeout] | number | `5000`  | Request timeout in ms
+...       | mixed  |         | API parameters
 
 
 #### Example
 
 ```js
-const geo = require ('google-geolocation');
+const geo = require( 'google-geolocation' );
 
-geo ({
+geo( {
   key: 'abc123',
   timeout: 2000,
-});
+} );
 ```
 
 
