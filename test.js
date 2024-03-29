@@ -6,8 +6,8 @@ License:          Unlicense (public domain, see LICENSE file)
 Source & docs:    https://github.com/fvdm/nodejs-geolocation
 */
 
-const dotest = require ('dotest');
-const app = require ('./');
+const dotest = require( 'dotest' );
+const app = require( './' );
 
 const config = {
   key: process.env.KEY,
@@ -15,20 +15,20 @@ const config = {
 };
 
 
-dotest.add ('exports', async test => {
-  test ()
-    .isFunction ('fail', 'exports', app)
-    .done ()
+dotest.add( 'exports', async test => {
+  test()
+    .isFunction( 'fail', 'exports', app )
+    .done()
   ;
-});
+} );
 
 
-dotest.add ('Function', async test => {
+dotest.add( 'Function', async test => {
   let error;
   let data;
 
   try {
-    data = await app ({
+    data = await app( {
       key: config.key,
       timeout: config.timeout,
       wifiAccessPoints: [
@@ -38,50 +38,48 @@ dotest.add ('Function', async test => {
           signalToNoiseRatio: 40,
         },
       ],
-    });
+    } );
   }
-  catch (err) {
+  catch ( err ) {
     error = err;
   }
 
-  const location = data && data.location;
-
-  test (error)
-    .isObject ('fail', 'data', data)
-    .isNotEmpty ('fail', 'data', data)
-    .isObject ('fail', 'data.location', location)
-    .isNumber ('fail', 'data.location.lat', location && location.lat)
-    .isNumber ('fail', 'data.location.lng', location && location.lng)
-    .isNumber ('fail', 'data.accuracy', data && data.accuracy)
-    .done ()
+  test( error )
+    .isObject( 'fail', 'data', data )
+    .isNotEmpty( 'fail', 'data', data )
+    .isObject( 'fail', 'data.location', data?.location )
+    .isNumber( 'fail', 'data.location.lat', data?.location?.lat )
+    .isNumber( 'fail', 'data.location.lng', data?.location?.lng )
+    .isNumber( 'fail', 'data.accuracy', data?.accuracy )
+    .done()
   ;
-});
+} );
 
 
-dotest.add ('API error', async test => {
+dotest.add( 'API error', async test => {
   let error;
   let data;
 
   try {
-    data = await app ({
+    data = await app( {
       key: 'invalid',
       considerIp: false,
       carrier: 0,
-    });
+    } );
   }
-  catch (err) {
+  catch ( err ) {
     error = err;
   }
 
-  test ()
-    .isError ('fail', 'error', error)
-    .isNotEmpty ('fail', 'error.message', error && error.message)
-    .isNumber ('fail', 'error.code', error && error.code)
-    .isArray ('fail', 'error.errors', error && error.errors)
-    .isUndefined ('fail', 'data', data)
-    .done ()
+  test()
+    .isError( 'fail', 'error', error )
+    .isNotEmpty( 'fail', 'error.message', error?.message )
+    .isNumber( 'fail', 'error.code', error?.code )
+    .isArray( 'fail', 'error.errors', error?.errors )
+    .isUndefined( 'fail', 'data', data )
+    .done()
   ;
-});
+} );
 
 
-dotest.run ();
+dotest.run();
