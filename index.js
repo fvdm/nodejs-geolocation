@@ -1,7 +1,7 @@
 /*
 Name:             google-geolocation - index.js
 Description:      Google Maps Geolocation API for Node.js (unofficial)
-Author:           Franklin (https://fvdm.com)
+Author:           Franklin (https://frankl.in)
 License:          Unlicense (public domain, see LICENSE file)
 Source & docs:    https://github.com/fvdm/nodejs-geolocation
 */
