@@ -32,6 +32,7 @@
     "bssid",
     "carrier",
     "cellular",
+    "geoint",
     "geolocation",
     "google",
     "location",
@@ -40,6 +41,7 @@
     "mnc",
     "mobile",
     "network",
+    "osint",
     "unlicense",
     "wifi",
     "wlan"
