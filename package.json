@@ -15,10 +15,9 @@
     "url": "https://github.com/fvdm/nodejs-geolocation/issues"
   },
   "main": "index.js",
+  "dependencies": {},
   "devDependencies": {
-    "@eslint/js": "^9.39.1",
-    "dotest": "^2",
-    "globals": "^16.5.0"
+    "dotest": "^2"
   },
   "engines": {
     "node": ">=18"
@@ -26,7 +25,7 @@
   "files": [
     "example.js"
   ],
-  "runkitExampleFilename": "example.js",
+  "runkitExampleFilename": "example.js",  
   "keywords": [
     "accesspoints",
     "api",
