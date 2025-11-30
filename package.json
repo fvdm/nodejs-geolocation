@@ -1,8 +1,8 @@
 {
   "author": {
     "name": "Franklin",
-    "email": "info@fvdm.com",
-    "url": "https://fvdm.com"
+    "email": "fr@nkl.in",
+    "url": "https://frankl.in"
   },
   "name": "google-geolocation",
   "description": "Google Maps Geolocation API for Node.js (unofficial)",
@@ -32,6 +32,7 @@
     "bssid",
     "carrier",
     "cellular",
+    "geoint",
     "geolocation",
     "google",
     "location",
@@ -40,6 +41,7 @@
     "mnc",
     "mobile",
     "network",
+    "osint",
     "unlicense",
     "wifi",
     "wlan"
